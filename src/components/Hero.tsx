@@ -119,9 +119,7 @@ export const Hero = () => {
               शब्दें वांटूं धन जनलोकां॥
             </p>
             <div className="mt-8 flex items-center gap-3 pt-6 border-t border-border/50">
-              <div className="w-10 h-10 rounded-full bg-gradient-saffron flex items-center justify-center text-primary-foreground font-display">
-                तु
-              </div>
+            
               <div>
                 <div className="font-serif-dev text-sm text-maroon">— संत तुकाराम महाराज</div>
                 <div className="text-xs text-muted-foreground">अभंग गाथा</div>
