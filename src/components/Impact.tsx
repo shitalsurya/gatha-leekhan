@@ -33,7 +33,7 @@ export const Impact = () => {
             ॥ अभियानाचा प्रभाव ॥
           </span>
           <h2 className="font-display text-4xl lg:text-5xl text-maroon mt-4">
-            भक्तीच्या लहरी, संख्येत मोजल्या
+            आपल्या सेवेची ताकद
           </h2>
         </div>
 
