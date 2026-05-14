@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Gaatha Likhaan" },
+      { name: "description", content: "A modern Marathi spiritual website demo for a devotional handwritten Tukaram Maharaj Gatha writing movement." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Gaatha Likhaan" },
+      { property: "og:description", content: "A modern Marathi spiritual website demo for a devotional handwritten Tukaram Maharaj Gatha writing movement." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Gaatha Likhaan" },
+      { name: "twitter:description", content: "A modern Marathi spiritual website demo for a devotional handwritten Tukaram Maharaj Gatha writing movement." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/00868f94-7c16-4caa-b35a-24ac67bade9b/id-preview-8f0c9d4f--232b127d-3f25-4450-abaf-dad71aad46d1.lovable.app-1778742176144.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/00868f94-7c16-4caa-b35a-24ac67bade9b/id-preview-8f0c9d4f--232b127d-3f25-4450-abaf-dad71aad46d1.lovable.app-1778742176144.png" },
     ],
     links: [
       {
