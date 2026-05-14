@@ -41,7 +41,7 @@ export const Navbar = () => {
           </div>
           <div className="leading-tight">
             <div className="font-display text-xl text-maroon">गाथालिखाण</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-saffron-deep">Sacred Seva</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-saffron-deep">सेवा अभियान</div>
           </div>
         </a>
 
