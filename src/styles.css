@@ -4,12 +4,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Mukta:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&family=Mukta:wght@300;400;500;600;700;800&display=swap');
 
 @theme inline {
   --font-display: "Tiro Devanagari Marathi", serif;
   --font-serif: "Noto Serif Devanagari", serif;
-  --font-sans: "Mukta", system-ui, sans-serif;
+  --font-sans: "Noto Sans Devanagari", "Mukta", system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -107,6 +107,10 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    line-height: 1.8;
+    word-break: normal;
+    -webkit-font-feature-settings: "kern", "liga";
+    font-feature-settings: "kern", "liga";
     background-image:
       radial-gradient(ellipse at 10% 0%, oklch(0.78 0.15 55 / 0.08), transparent 50%),
       radial-gradient(ellipse at 90% 100%, oklch(0.7 0.18 35 / 0.08), transparent 50%);
