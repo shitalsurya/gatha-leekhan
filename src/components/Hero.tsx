@@ -156,8 +156,9 @@ export const Hero = () => {
                 <div className="text-xs text-muted-foreground">अभंग गाथा</div>
               </div>
             </div>
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Bottom fade */}
