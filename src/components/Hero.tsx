@@ -95,15 +95,46 @@ export const Hero = () => {
           </motion.div>
         </div>
 
-        {/* Right manuscript card */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92, rotate: 2 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="lg:col-span-5 relative hidden lg:block"
-        >
-          <div className="absolute -inset-6 bg-gradient-saffron rounded-3xl blur-2xl opacity-30" />
-          <div className="relative bg-cream rounded-3xl border border-saffron/30 shadow-sacred p-10 paper-texture">
+        {/* Right column: devotional video + manuscript */}
+        <div className="lg:col-span-5 relative space-y-8">
+          {/* Cinematic YouTube video card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.94, y: 24 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.25, ease: "easeOut" }}
+            className="relative group"
+          >
+            <div className="absolute -inset-4 bg-gradient-saffron rounded-3xl blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-700" />
+            <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-saffron/60 via-gold/40 to-maroon/40 opacity-80" />
+            <div className="relative rounded-3xl overflow-hidden border border-saffron/40 bg-cream/40 backdrop-blur-md shadow-sacred transition-transform duration-500 group-hover:-translate-y-1">
+              <div className="absolute inset-0 paper-texture opacity-40 pointer-events-none z-10 mix-blend-multiply" />
+              <FloatingParticles />
+              <div className="relative aspect-video">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/xOtWeddSijo?rel=0&modestbranding=1"
+                  title="गाथालिखाण — देवोत्तर भक्ती व्हिडिओ"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+              <div className="flex items-center justify-between px-5 py-3 bg-cream/70 backdrop-blur border-t border-saffron/20">
+                <span className="font-display text-sm text-saffron-deep tracking-widest">॥ भक्तिगीत ॥</span>
+                <span className="font-serif-dev text-xs text-maroon/70">संत तुकाराम महाराज</span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Manuscript card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92, rotate: 2 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 1, delay: 0.45 }}
+            className="relative hidden lg:block"
+          >
+            <div className="absolute -inset-6 bg-gradient-saffron rounded-3xl blur-2xl opacity-30" />
+            <div className="relative bg-cream rounded-3xl border border-saffron/30 shadow-sacred p-10 paper-texture">
             <div className="flex items-center justify-between mb-6">
               <span className="font-display text-sm text-saffron-deep tracking-widest">॥ अभंग ॥</span>
               <span className="w-12 h-px bg-gold" />
@@ -125,8 +156,9 @@ export const Hero = () => {
                 <div className="text-xs text-muted-foreground">अभंग गाथा</div>
               </div>
             </div>
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Bottom fade */}
