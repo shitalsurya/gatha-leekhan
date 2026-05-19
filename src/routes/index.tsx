@@ -34,6 +34,7 @@ function Index() {
     <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <Hero />
+      <Registration />
       <About />
       <Impact />
       <Process />
